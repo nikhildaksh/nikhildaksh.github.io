@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter, Code, Database, Rocket, Users, Briefcase, GraduationCap, MapPin, Phone, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Code, Database, Rocket, Users, Briefcase, GraduationCap, MapPin, Phone, Instagram, Tags } from "lucide-react";
 
 export const portfolioData = {
   // Personal Info
@@ -149,11 +149,33 @@ export const portfolioData = {
     subtitle: "Production-ready applications showcasing my full-stack expertise",
     list: [
       {
+        title: "Grafiq India",
+        description:
+          "A full-stack custom printing e-commerce platform for business cards, stamps, ID cards, flyers, banners, and other personalized print products. Built with secure AWS S3 file uploads, dynamic product customization, online payments, and an intuitive admin dashboard for managing orders, products, and customers.",
+        tags: [
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Mongoose",
+          "AWS S3",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "Framer Motion",
+          "Razorpay"
+        ],
+        liveLink: "https://grafiq.in",
+        githubLink: "#",
+        isPrivate: true,
+      },
+      {
         title: "Heega Sports E-Commerce",
         description: "Full-stack e-commerce platform with product catalog, shopping cart, order management, and payment integration. Built with Redux Toolkit for state management and deployed on Ubuntu VPS for optimal performance.",
         tags: ["Next.js", "TypeScript", "Mongoose", "shadcn/ui", "Redux Toolkit"],
         liveLink: "https://heegasports.com",
         githubLink: "#",
+        isPrivate: true,
       },
       {
         title: "DreamTopper ERP System",
@@ -161,6 +183,7 @@ export const portfolioData = {
         tags: ["Next.js", "TypeScript", "Mongoose", "AWS S3", "PayU"],
         liveLink: "https://erp.dreamtopper.in",
         githubLink: "#",
+        isPrivate: true,
       },
       {
         title: "DreamTopper LMS Platform",
@@ -168,6 +191,7 @@ export const portfolioData = {
         tags: ["Next.js", "TypeScript", "FFMPEG", "AWS S3", "CloudFront"],
         liveLink: "https://learn.dreamtopper.in",
         githubLink: "#",
+        isPrivate: true,
       },
       {
         title: "Calligraphy Foundation LMS",
@@ -175,6 +199,7 @@ export const portfolioData = {
         tags: ["Next.js", "TypeScript", "Bunny Stream", "MongoDB", "shadcn/ui"],
         liveLink: "https://learn.thecalligraphyfoundation.com",
         githubLink: "#",
+        isPrivate: true,
       },
       {
         title: "Landing Pages & Forms",
@@ -182,6 +207,7 @@ export const portfolioData = {
         tags: ["PHP", "MySQL", "Payment Integration", "Responsive Design"],
         liveLink: "#",
         githubLink: "#",
+        isPrivate: true,
       },
     ],
   },

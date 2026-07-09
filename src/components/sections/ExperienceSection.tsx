@@ -120,20 +120,18 @@ const ExperienceSection = () => {
                       {exp.skills.map((skill, skillIndex) => (
                         <motion.span
                           key={skillIndex}
-                          initial={{ opacity: 0, scale: 0, rotate: -90 }}
+                          initial={{ opacity: 0, y: 10 }}
                           animate={
                             isInView
-                              ? { opacity: 1, scale: 1, rotate: 0 }
+                              ? { opacity: 1, y: 0 }
                               : {}
                           }
                           transition={{
-                            duration: 0.4,
-                            delay: 0.9 + index * 0.2 + skillIndex * 0.05,
-                            type: "spring",
-                            stiffness: 200,
-                            damping: 15,
+                            duration: 0.35,
+                            delay: 0.5 + index * 0.15 + skillIndex * 0.03,
+                            ease: "easeOut",
                           }}
-                          whileHover={{ scale: 1.15, y: -2 }}
+                          whileHover={{ scale: 1.06, y: -2 }}
                           className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium cursor-default"
                         >
                           {skill}
@@ -225,20 +223,18 @@ const ExperienceSection = () => {
                       {edu.skills.map((skill, skillIndex) => (
                         <motion.span
                           key={skillIndex}
-                          initial={{ opacity: 0, scale: 0, rotate: -90 }}
+                          initial={{ opacity: 0, y: 10 }}
                           animate={
                             isInView
-                              ? { opacity: 1, scale: 1, rotate: 0 }
+                              ? { opacity: 1, y: 0 }
                               : {}
                           }
                           transition={{
-                            duration: 0.4,
-                            delay: 1.3 + skillIndex * 0.05,
-                            type: "spring",
-                            stiffness: 200,
-                            damping: 15,
+                            duration: 0.35,
+                            delay: 0.9 + skillIndex * 0.03,
+                            ease: "easeOut",
                           }}
-                          whileHover={{ scale: 1.15, y: -2 }}
+                          whileHover={{ scale: 1.06, y: -2 }}
                           className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium cursor-default"
                         >
                           {skill}
