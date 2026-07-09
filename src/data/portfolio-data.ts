@@ -11,6 +11,7 @@ export const portfolioData = {
     email: "nikhildaksh24@gmail.com",
     phone: "+91 75051 12399",
     availability: "I'm currently available for freelance projects and full-time opportunities. Feel free to reach out!",
+    resumeUrl: "https://drive.google.com/file/d/1QvFGa60ryL2erMdwFmowD5z2uQ-vzQ-M/view",
   },
 
   // Social Links

@@ -67,8 +67,10 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              <Button size="sm" variant="default">
-                Download CV
+              <Button size="sm" variant="default" asChild>
+                <a href={portfolioData.personal.resumeUrl} target="_blank" rel="noopener noreferrer">
+                  Download CV
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -108,8 +110,10 @@ const Navbar = () => {
                     </Link>
                   </motion.div>
                 ))}
-                <Button size="sm" variant="default" className="w-full">
-                  Download Resume
+                <Button size="sm" variant="default" className="w-full" asChild>
+                  <a href={portfolioData.personal.resumeUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+                    Download Resume
+                  </a>
                 </Button>
               </div>
             </motion.div>
